@@ -1,3 +1,4 @@
 let g:snipMate = get(g:, 'snipMate', {}) " Allow for vimrc re-sourcing
 let g:snipMate.scope_aliases = {}
-let g:snipMate.scope_aliases.javascript = "jquery,javascript-jquery"
+let g:snipMate.scope_aliases['javascript'] = 'jquery'"
+let g:snipMate.scope_aliases['html'] = 'javascript'"
