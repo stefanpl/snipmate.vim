@@ -1,0 +1,14 @@
+@parallax-perspective: 1;
+.parallax-element(@distance: 1, @perspective: @parallax-perspective) {
+	transform:
+	translateZ(@distance * @perspective * 1px)
+	scale(abs(@distance - 1)); 
+	z-index: @distance * 1000;
+}
+.parallax-wrapper {
+	overflow-y: auto;
+	perspective: @parallax-perspective;
+	&, * {
+		transform-style: preserve-3d;
+	}
+}
